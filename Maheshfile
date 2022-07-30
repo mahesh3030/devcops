@@ -11,5 +11,20 @@ steps {
 echo 'build testing' 
 }
 }
+stage ('code quality check') {
+steps {
+echo 'quality check' 
+}
+}
+stage ('seqrity check') {
+steps {
+echo 'sonarqub' 
+}
+}
+stage ('deploy') {
+steps {
+echo 'deploy to servers'
+}
+}
 }
 }
